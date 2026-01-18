@@ -90,9 +90,9 @@ except ValueError as e:
 积分_实践实习 = df_summary['实践实习积分-积分'].sum()
 积分_总和 = df_summary['积分总和'].sum()
 
-# 2. 计算人均分
+# 2. 计算人均分，保留两位小数
 if 总人数 > 0:
-    人均分 = 积分_总和 / 总人数
+    人均分 = round(积分_总和 / 总人数, 2)  # 这里加上 round 函数
 else:
     人均分 = 0
 
