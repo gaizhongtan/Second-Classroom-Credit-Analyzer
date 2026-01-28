@@ -1,1 +1,14 @@
+# 1. 忽略虚拟环境 (最重要！对应你左侧的 .venv 文件夹)
+.venv/
+venv/
+env/
+
+# 2. 忽略 PyCharm 配置
 .idea/
+
+# 3. 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 4. 忽略你程序生成的 Excel 结果 (保留模板)
+*已生成.xlsx
